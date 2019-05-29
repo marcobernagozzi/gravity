@@ -1,3 +1,4 @@
+package main.java;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ public class PlotPlanets extends PlotHelper {
     public PlotPlanets(Planet[] planets) {
         PlotHelper.latitudes = new float[planets.length];
         PlotHelper.longitudes = new float[planets.length];
-        for(int i = 0; i < planets.length; i++) {
+        for (int i = 0; i < planets.length; i++) {
             PlotHelper.latitudes[i] = (float) planets[i].y;
             PlotHelper.longitudes[i] = (float) planets[i].x;
         }
@@ -20,7 +21,7 @@ public class PlotPlanets extends PlotHelper {
     }
 
     public void update(Planet[] planets) {
-        for(int i = 0; i < latitudes.length; i++) {
+        for (int i = 0; i < latitudes.length; i++) {
             PlotHelper.latitudes[i] = (float) planets[i].y;
             PlotHelper.longitudes[i] = (float) planets[i].x;
         }
