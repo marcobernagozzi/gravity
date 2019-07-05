@@ -20,7 +20,7 @@ import static java.util.stream.Collectors.toMap;
 public class ComputeGravitationalForce extends PlotHelper {
     public final static double G = 6.67408 * 10E-11;
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
 
         int n = planets.size();
         PlotPlanets plotPlanets = new PlotPlanets();
